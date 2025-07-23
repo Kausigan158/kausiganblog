@@ -59,12 +59,12 @@ const BlogCarousel = ({ title, posts, delay = 0 }: BlogCarouselProps) => {
       {/* Blog Cards Container */}
       <div 
         ref={scrollRef}
-        className="flex space-x-6 overflow-x-auto carousel-container pb-4"
+        className="flex space-x-12 overflow-x-auto carousel-container pb-8 px-2"
       >
         {posts.map((post, index) => (
           <div
             key={post.id}
-            className={`animate-slide-in-right stagger-${Math.min(index + 1, 5)}`}
+            className={`animate-slide-in-right stagger-${Math.min(index + 1, 5)} mx-2`}
             style={{ animationDelay: `${delay * 0.1 + index * 0.1}s` }}
           >
             <BlogCard {...post} />
