@@ -113,10 +113,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Categories</h4>
               <div className="space-y-2">
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Tech Insights</a>
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Legal Trends</a>
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Opinion Picks</a>
-                <a href="#" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Industry News</a>
+                <a href="/category/tech-insights" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Tech Insights</a>
+                <a href="/category/legal-trends" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Legal Trends</a>
+                <a href="/category/opinion-picks" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Opinion Picks</a>
+                <a href="/category/industry-news" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Industry News</a>
               </div>
             </div>
             
