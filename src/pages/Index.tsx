@@ -19,7 +19,7 @@ const Index = () => {
       <Hero />
       
       {/* Blog Carousels Section */}
-      <div className="relative z-10 -mt-32">
+      <div className="relative z-10 -mt-16">
         <div className="container mx-auto px-4 pb-20">
           {/* Latest Blogs Carousel */}
           <BlogCarousel 
