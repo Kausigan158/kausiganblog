@@ -240,4 +240,208 @@
   .stagger-3 { animation-delay: 0.3s; }
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+
+/* Circular Timeline Styles */
+.circular-timeline {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.timeline-hub {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(var(--netflix-red)) 0%, hsl(var(--netflix-red-dark)) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 0 30px hsl(var(--netflix-red) / 0.3),
+    0 0 60px hsl(var(--netflix-red) / 0.2),
+    inset 0 2px 20px rgba(255, 255, 255, 0.1);
+  animation: hubFloat 4s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-hub::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: hubRotate 8s linear infinite;
+}
+
+.hub-inner {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: hsl(var(--background));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  border: 2px solid hsl(var(--netflix-red));
+}
+
+.hub-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: hsl(var(--netflix-red));
+  text-align: center;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateZ(-100px) scale(0.8);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: var(--timeline-delay);
+}
+
+.timeline-item-visible {
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+  animation: timelineItemAppear 1s ease-out forwards;
+}
+
+.timeline-connector {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(
+    90deg, 
+    hsl(var(--netflix-red)) 0%, 
+    transparent 70%
+  );
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 50%;
+  z-index: 1;
+  animation: connectorPulse 3s ease-in-out infinite;
+}
+
+.experience-card {
+  width: 320px;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 
+    0 10px 30px -10px hsl(var(--foreground) / 0.1),
+    0 0 0 1px hsl(var(--border) / 0.5);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 
+    0 20px 40px -15px hsl(var(--foreground) / 0.15),
+    0 0 0 1px hsl(var(--netflix-red) / 0.3),
+    0 0 30px hsl(var(--netflix-red) / 0.1);
+}
+
+.experience-card:hover::before {
+  left: 100%;
+}
+
+.card-header {
+  position: relative;
+  z-index: 2;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Keyframe Animations */
+@keyframes hubFloat {
+  0%, 100% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateZ(180deg);
+  }
+}
+
+@keyframes hubRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes timelineItemAppear {
+  0% {
+    opacity: 0;
+    transform: translateZ(-100px) scale(0.8) rotateY(-30deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateZ(-20px) scale(0.95) rotateY(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes connectorPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.05);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .circular-timeline {
+    height: 600px !important;
+  }
+  
+  .experience-card {
+    width: 280px;
+    padding: 20px;
+  }
+  
+  .timeline-connector {
+    width: 150px;
+  }
+}
 }

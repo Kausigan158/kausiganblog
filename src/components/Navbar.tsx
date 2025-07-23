@@ -33,6 +33,13 @@ const Navbar = () => {
                 <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-netflix-red transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
+            <Link
+              to="/experience"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
+            >
+              Experience
+              <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-netflix-red transition-all duration-300 group-hover:w-full" />
+            </Link>
           </div>
 
           {/* Search and Mobile Menu */}
@@ -90,6 +97,13 @@ const Navbar = () => {
                   {category}
                 </Link>
               ))}
+              <Link
+                to="/experience"
+                className={`text-muted-foreground hover:text-foreground transition-all duration-300 animate-slide-in-right stagger-${categories.length + 1}`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Experience
+              </Link>
             </div>
           </div>
         )}
