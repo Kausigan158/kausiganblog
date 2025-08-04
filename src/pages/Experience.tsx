@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
-import { MapPin, Calendar, Building } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { MapPin, Calendar, Building, ChevronDown } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const experienceData = [
   {
@@ -97,35 +98,34 @@ const experienceData = [
 ];
 
 const Experience = () => {
-  const timelineRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const [expanded, setExpanded] = useState<{ [key: number]: boolean }>({});
 
   useEffect(() => {
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('timeline-item-visible');
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.3,
-    });
-
-    const timelineItems = timelineRef.current?.querySelectorAll('.timeline-item');
-    timelineItems?.forEach((item) => observer.observe(item));
-
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const idx = Number(entry.target.getAttribute('data-index'));
+          if (entry.isIntersecting) {
+            setVisibleCards((prev) => (prev.includes(idx) ? prev : [...prev, idx]));
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    const cards = containerRef.current?.querySelectorAll('.experience-vertical-card');
+    cards?.forEach((card) => observer.observe(card));
     return () => observer.disconnect();
   }, []);
 
-  const radius = 400;
-  const centerX = 50;
-  const centerY = 50;
+  const handleToggle = (idx: number) => {
+    setExpanded((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  };
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
       <div className="pt-24 pb-20">
         {/* Hero Section */}
         <div className="container mx-auto px-4 text-center mb-20">
@@ -137,96 +137,76 @@ const Experience = () => {
             across courts, organizations, and legal institutions.
           </p>
         </div>
-
-        {/* Circular Timeline */}
-        <div className="relative w-full max-w-6xl mx-auto px-4" ref={timelineRef}>
-          <div className="circular-timeline" style={{ 
-            height: '800px',
-            position: 'relative',
-            margin: '0 auto'
-          }}>
-            {/* Center Hub */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="timeline-hub">
-                <div className="hub-inner">
-                  <span className="hub-text">Experience</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Timeline Items */}
-            {experienceData.map((experience, index) => {
-              const angle = (index / experienceData.length) * 360;
-              const radian = (angle * Math.PI) / 180;
-              const x = centerX + (radius / 800) * 100 * Math.cos(radian);
-              const y = centerY + (radius / 800) * 100 * Math.sin(radian);
-
-              return (
-                <div
-                  key={experience.id}
-                  className="timeline-item"
-                  style={{
-                    position: 'absolute',
-                    left: `${x}%`,
-                    top: `${y}%`,
-                    transform: 'translate(-50%, -50%)',
-                    '--timeline-delay': `${index * 0.2}s`
-                  } as React.CSSProperties}
-                >
-                  {/* Connection Line */}
-                  <div 
-                    className="timeline-connector"
-                    style={{
-                      transform: `rotate(${angle + 180}deg)`,
-                      transformOrigin: '0 50%'
-                    }}
-                  />
-                  
-                  {/* Experience Card */}
-                  <div className="experience-card">
-                    <div className="card-header">
-                      <div className="flex items-start justify-between mb-3">
-                        <Building className="text-netflix-red flex-shrink-0 mt-1" size={20} />
-                        <div className="ml-3 flex-1">
-                          <h3 className="font-semibold text-foreground text-lg mb-1">
-                            {experience.title}
-                          </h3>
-                          <p className="text-netflix-red font-medium text-sm mb-2">
-                            {experience.company}
-                          </p>
-                        </div>
+        {/* Vertical Card Layout */}
+        <div className="container mx-auto px-4 max-w-2xl flex flex-col gap-y-8 items-center" ref={containerRef}>
+          {experienceData.map((experience, idx) => {
+            const isVisible = visibleCards.includes(idx);
+            const isExpandable = experience.responsibilities.length > 3;
+            const isExpanded = expanded[idx];
+            const shownResponsibilities = isExpandable && !isExpanded
+              ? experience.responsibilities.slice(0, 3)
+              : experience.responsibilities;
+            return (
+              <Card
+                key={experience.id}
+                data-index={idx}
+                className={`experience-vertical-card w-full bg-card border border-border rounded-2xl transition-all duration-700 group overflow-hidden shadow-lg hover:scale-[1.015] hover:shadow-2xl ${
+                  isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+                }`}
+                style={{ animationDelay: `${idx * 0.12}s` }}
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Building className="text-netflix-red flex-shrink-0" size={24} />
+                    <div>
+                      <CardTitle className="text-2xl md:text-3xl font-bold mb-1 leading-tight text-foreground">
+                        {experience.title}
+                      </CardTitle>
+                      <div className="text-netflix-red font-medium text-base md:text-lg">
+                        {experience.company}
                       </div>
-                      
-                      <div className="flex items-center text-muted-foreground text-sm mb-2">
-                        <MapPin size={14} className="mr-2" />
-                        {experience.location}
-                      </div>
-                      
-                      <div className="flex items-center text-muted-foreground text-sm mb-4">
-                        <Calendar size={14} className="mr-2" />
-                        {experience.duration}
-                      </div>
-                    </div>
-                    
-                    <div className="card-content">
-                      <ul className="space-y-2">
-                        {experience.responsibilities.slice(0, 3).map((responsibility, idx) => (
-                          <li key={idx} className="text-sm text-muted-foreground leading-relaxed">
-                            • {responsibility}
-                          </li>
-                        ))}
-                        {experience.responsibilities.length > 3 && (
-                          <li className="text-sm text-netflix-red font-medium">
-                            +{experience.responsibilities.length - 3} more achievements
-                          </li>
-                        )}
-                      </ul>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-muted-foreground text-sm md:text-base">
+                    <span className="flex items-center">
+                      <MapPin size={16} className="mr-2" />
+                      {experience.location}
+                    </span>
+                    <span className="flex items-center">
+                      <Calendar size={16} className="mr-2" />
+                      {experience.duration}
+                    </span>
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-2">
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground text-sm md:text-base transition-all duration-500">
+                    {shownResponsibilities.map((responsibility, idx2) => (
+                      <li
+                        key={idx2}
+                        className={`animate-fade-in-up responsibility-item`}
+                        style={{ animationDelay: isExpanded ? `${0.08 * idx2}s` : undefined }}
+                      >
+                        {responsibility}
+                      </li>
+                    ))}
+                  </ul>
+                  {isExpandable && (
+                    <button
+                      className="mt-3 flex items-center gap-1 text-netflix-red font-semibold focus:outline-none hover:underline transition-colors text-sm md:text-base group/readmore"
+                      onClick={() => handleToggle(idx)}
+                      aria-expanded={!!isExpanded}
+                    >
+                      <span>{isExpanded ? 'Show less' : `Read more (${experience.responsibilities.length - 3} more)`}</span>
+                      <ChevronDown
+                        className={`transition-transform duration-300 group-hover/readmore:rotate-180 ${isExpanded ? 'rotate-180' : ''}`}
+                        size={18}
+                      />
+                    </button>
+                  )}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </div>

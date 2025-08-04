@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Netflix-inspired blog design system */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+/* Harvard Business Review-inspired typography with Netflix dark theme */
 
 @layer base {
   :root {
@@ -444,4 +445,491 @@
     width: 150px;
   }
 }
+
+@keyframes bgFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-bg-fade-in {
+  animation: bgFadeIn 1.2s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+@keyframes gradientShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.animate-gradient-shimmer {
+  background-size: 200% 200%;
+  animation: gradientShimmer 2.5s linear infinite alternate;
+}
+
+@keyframes bounceOnHover {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-8px); }
+  50% { transform: translateY(-4px); }
+  70% { transform: translateY(-8px); }
+}
+.animate-bounce-on-hover:hover {
+  animation: bounceOnHover 0.7s;
+}
+
+/* Animated gradient border for cards */
+.animated-gradient-border {
+  position: relative;
+  z-index: 0;
+}
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(120deg, hsl(var(--netflix-red)), hsl(var(--foreground)), hsl(var(--netflix-red-dark)), hsl(var(--foreground)) 80%);
+  background-size: 200% 200%;
+  animation: gradientShimmer 3s linear infinite;
+  opacity: 0.7;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.animated-gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* Pop-in card entry */
+@keyframes popIn {
+  0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+  60% { opacity: 1; transform: translateY(-8px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-pop-in {
+  animation: popIn 0.9s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Divider fade-in */
+@keyframes dividerFadeIn {
+  from { opacity: 0; transform: scaleX(0.7); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+.animate-divider-fade-in {
+  animation: dividerFadeIn 0.7s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Slide-in for responsibility items */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.animate-slide-in {
+  animation: slideIn 0.7s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Pulse/rotate for Building icon */
+@keyframes pulseIcon {
+  0%, 100% { filter: drop-shadow(0 0 0 hsl(var(--netflix-red))); transform: rotate(0deg); }
+  50% { filter: drop-shadow(0 0 12px hsl(var(--netflix-red))); transform: rotate(-8deg); }
+}
+.animate-pulse-on-hover:hover {
+  animation: pulseIcon 1.1s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes iconPulseRing {
+  0% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.15); }
+  100% { opacity: 0.2; transform: scale(1); }
+}
+.animate-icon-pulse {
+  animation: iconPulseRing 1.5s infinite;
+}
+
+/* Animated background gradient move */
+@keyframes bgGradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.animate-bg-gradient-move {
+  background-size: 200% 200%;
+  animation: bgGradientMove 12s linear infinite alternate;
+}
+
+/* Ripple effect for button */
+.ripple-effect {
+  width: 120%;
+  height: 120%;
+  border-radius: 9999px;
+  background: radial-gradient(circle, hsl(var(--netflix-red)/0.25) 0%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+.ripple:active .ripple-effect {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+/* Bounce for chevron */
+@keyframes bounceToggle {
+  0%, 100% { transform: rotate(180deg) translateY(0); }
+  30% { transform: rotate(180deg) translateY(-4px); }
+  60% { transform: rotate(180deg) translateY(2px); }
+}
+.bounce-on-toggle {
+  animation: bounceToggle 0.5s;
+}
+}
+
+/* Enhanced Content Protection Styles */
+@layer utilities {
+  /* Disable text selection globally */
+  .no-select {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Disable image dragging */
+  .no-drag {
+    -webkit-user-drag: none !important;
+    -khtml-user-drag: none !important;
+    -moz-user-drag: none !important;
+    -o-user-drag: none !important;
+    user-drag: none !important;
+    pointer-events: none !important;
+  }
+
+  /* Disable text highlighting */
+  .no-highlight::selection {
+    background: transparent !important;
+    color: inherit !important;
+  }
+
+  .no-highlight::-moz-selection {
+    background: transparent !important;
+    color: inherit !important;
+  }
+}
+
+/* Global content protection - applied to all elements */
+* {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Allow selection only for interactive elements */
+input, textarea, [contenteditable="true"], .allow-select {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Disable all images from being dragged or selected */
+img {
+  -webkit-user-drag: none !important;
+  -khtml-user-drag: none !important;
+  -moz-user-drag: none !important;
+  -o-user-drag: none !important;
+  user-drag: none !important;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Disable text highlighting globally */
+::selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+::-moz-selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Disable copy on all text elements */
+body, div, p, h1, h2, h3, h4, h5, h6, span, a, li, td, th, article, section, header, footer, nav, aside, main {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Prevent context menu on all elements */
+* {
+  -webkit-context-menu: none !important;
+  -moz-context-menu: none !important;
+  context-menu: none !important;
+}
+
+/* Disable print styles */
+@media print {
+  * {
+    display: none !important;
+  }
+  
+  body::before {
+    content: "Printing is disabled for this content.";
+    display: block !important;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+  /* Blog content styling */
+  .blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: hsl(var(--foreground));
+  }
+
+  .blog-content h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: hsl(var(--foreground));
+    font-family: 'Merriweather', serif;
+  }
+
+  .blog-content h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .blog-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    word-break: normal;
+    white-space: normal;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .blog-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .blog-content {
+      max-width: 700px;
+      padding: 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .blog-content {
+      max-width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    
+    .blog-content h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  /* Blog body specific styles */
+  .blog-body {
+    background: hsl(var(--background));
+    min-height: 100vh;
+  }
+
+  .blog-body .prose-content {
+    padding: 0 1rem;
+  }
+
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    .prose-content {
+      max-width: 100%;
+      padding: 0 0.5rem;
+    }
+    
+    .prose-content h1 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .prose-content h2 {
+      font-size: 1.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .prose-content h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .prose-content p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .prose-content .bg-muted\/30,
+    .prose-content .bg-gradient-to-r {
+      margin: 1.5rem 0;
+      padding: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .prose-content {
+      padding: 0 0.25rem;
+    }
+    
+    .prose-content h1 {
+      font-size: 1.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .prose-content h2 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .prose-content h3 {
+      font-size: 1.125rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .prose-content p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  /* Clean paragraph spacing */
+  .prose p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.125rem;
+    color: hsl(var(--foreground));
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .prose p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Blog body clean spacing */
+  .blog-body p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+    word-break: normal;
+    white-space: normal;
+    text-align: justify;
+    font-size: 1.05rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: hsl(var(--foreground));
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  .blog-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Force CSS to override all unwanted styles */
+  .blog-body p:empty {
+    display: none !important;
+  }
+
+  .blog-body br {
+    display: none !important;
+  }
+
+  /* Ensure proper text wrapping */
+  .prose {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: none;
+  }
+
+  .prose p {
+    word-break: normal;
+    white-space: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
+  }
+
+  /* Remove any extra spacing from content sections */
+  .content-section {
+    margin-bottom: 0;
+  }
+
+  .content-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Clean up highlighted boxes */
+  .bg-muted\/30,
+  .bg-gradient-to-r {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+  }
+
+  .bg-muted\/30 p,
+  .bg-gradient-to-r p {
+    margin-bottom: 0;
+  }
+
+  /* Heading spacing */
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose h1:first-child,
+  .prose h2:first-child,
+  .prose h3:first-child {
+    margin-top: 0;
+  }
+
+/* Prevent word splitting globally */
+body, p, div {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.prose, .prose p, .blog-content, .blog-content p, .blog-body p, .prose-content {
+  hyphens: none !important;
+}
+
+.prose ul, .prose ol, .prose li, .prose-content ul, .prose-content ol, .prose-content li {
+  font-size: 1.125rem;
+  color: inherit;
+  font-family: inherit;
 }

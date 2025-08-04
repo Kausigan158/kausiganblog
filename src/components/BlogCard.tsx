@@ -26,9 +26,7 @@ const BlogCard = ({
 }: BlogCardProps) => {
   return (
     <Link to={`/blog/${id}`}>
-      <div className={`blog-card bg-card rounded-xl overflow-hidden group cursor-pointer ${
-        featured ? 'w-full' : 'w-80 flex-shrink-0'
-      }`}>
+      <div className={`blog-card bg-card rounded-xl overflow-hidden group cursor-pointer w-full`}>
         <div className="relative">
           <img 
             src={imageUrl} 
