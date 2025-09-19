@@ -15,6 +15,11 @@ const CategoryPage = () => {
     return <Navigate to="/" replace />;
   }
 
+  // Redirect deprecated/removed categories
+  if (category === 'tech-insights') {
+    return <Navigate to="/" replace />;
+  }
+
   const posts = category === 'latest'
     ? allPosts.slice(0, 4)
     : allPosts.filter(post => post.category === category);

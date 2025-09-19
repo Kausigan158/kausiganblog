@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import BlogCarousel from '../components/BlogCarousel';
 import BlogCard from '../components/BlogCard';
+import EmailSubscription from '../components/EmailSubscription';
 import { blogPosts } from '../data/blogPosts';
 import { swissArbitrationPosts } from '../data/arbitration-insights/swiss-arbitration/swissArbitrationPosts';
 import { territorialDisputesPosts } from '../data/arbitration-insights/territorial-disputes/territorialDisputesPosts';
@@ -24,7 +25,6 @@ const Index = () => {
 
   // Organize posts by category for carousels
   const arbitrationPosts = allPosts.filter(post => post.category === 'arbitration-insights');
-  const techPosts = allPosts.filter(post => post.category === 'tech-insights');
   const legalPosts = allPosts.filter(post => post.category === 'legal-insights');
 
   return (
@@ -95,12 +95,7 @@ const Index = () => {
                     Learn More About Me
                   </button>
                 </Link>
-                <Link to="/experience">
-                  <button className="flex items-center space-x-2 px-6 py-3 bg-muted/20 backdrop-blur-sm text-foreground rounded-lg font-semibold hover:bg-muted/30 transition-all duration-300">
-                    <BookOpen size={20} />
-                    <span>View Experience</span>
-                  </button>
-                </Link>
+                
               </div>
             </div>
             
@@ -168,20 +163,12 @@ const Index = () => {
                   delay={0}
                 />
               )}
-              {/* Tech Insights Carousel */}
-              {techPosts.length > 0 && (
-                <BlogCarousel 
-                  title="Tech Insights" 
-                  posts={techPosts}
-                  delay={1}
-                />
-              )}
               {/* Legal Insights Carousel */}
               {legalPosts.length > 0 && (
                 <BlogCarousel 
                   title="Legal Insights" 
                   posts={legalPosts}
-                  delay={2}
+                  delay={1}
                 />
               )}
             </>
@@ -197,19 +184,7 @@ const Index = () => {
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
                 Get the latest insights, case studies, and industry news delivered directly to your inbox. Join professionals who trust Kausigan Srinivasan's Blog for cutting-edge content.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="w-full sm:w-96 px-6 py-4 bg-muted border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-netflix-red transition-all duration-300"
-                />
-                <button className="netflix-button w-full sm:w-auto">
-                  Subscribe Now
-                </button>
-              </div>
-              <p className="text-sm text-muted-foreground mt-4">
-                No spam, unsubscribe at any time. We respect your privacy.
-              </p>
+              <EmailSubscription />
             </div>
           </div>
         </div>
@@ -236,7 +211,6 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Categories</h4>
               <div className="space-y-2">
                 <Link to="/category/arbitration-insights" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Arbitration Insights</Link>
-                <Link to="/category/tech-insights" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Tech Insights</Link>
                 <Link to="/category/legal-insights" className="block text-muted-foreground hover:text-foreground transition-colors text-sm">Legal Insights</Link>
               </div>
             </div>

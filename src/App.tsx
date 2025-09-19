@@ -7,7 +7,6 @@ import { useContentProtection } from './hooks/use-content-protection';
 import Index from "./pages/Index";
 import BlogDetail from "./pages/BlogDetail";
 import CategoryPage from "./pages/CategoryPage";
-import Experience from "./pages/Experience";
 import NotFound from "./pages/NotFound";
 import AboutMe from "./pages/AboutMe";
 import SwissArbitrationBlog from "./pages/SwissArbitrationBlog";
@@ -28,7 +27,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/category/:category" element={<CategoryPage />} />
-            <Route path="/experience" element={<Experience />} />
+            
             <Route path="/about" element={<AboutMe />} />
             <Route path="/blog/swiss-arbitration" element={<SwissArbitrationBlog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
