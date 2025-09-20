@@ -4,6 +4,12 @@ import aiRevolutionHero from '../../../assets/ai-revolution-hero.jpg';
 import internationalLaw from '../../../assets/international-law.jpg';
 import fintechRegulation from '../../../assets/fintech-regulation.jpg';
 import remoteWorkLegal from '../../../assets/remote-work-legal.jpg';
+
+// Unique swiss arbitration images
+import techGiantsJusticeRules from '../../../assets/tech-giants-justice-rules.jpg';
+import indonesiaImmunityShield from '../../../assets/indonesia-immunity-shield.jpg';
+import swissArbitrationEuSafe from '../../../assets/swiss-arbitration-eu-safe.jpg';
+import malaysiaArbitrationGrowth from '../../../assets/malaysia-arbitration-growth.jpg';
 import { BlogPost } from '../../blogPosts';
 
 export const swissArbitrationPosts: BlogPost[] = [
@@ -108,7 +114,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 2, 2025',
     readTime: '11 min read',
     category: 'arbitration-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: techGiantsJusticeRules,
     tags: ['Technology', 'Arbitration', 'Privacy', 'Transparency', 'Digital Rights', 'Corporate Governance']
   },
   {
@@ -225,7 +231,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 5, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: internationalLaw,
+    imageUrl: indonesiaImmunityShield,
     tags: ['Indonesia', 'State Immunity', 'Arbitration', 'Enforcement', 'Investment Law', 'State-Owned Enterprises']
   },
   {
@@ -2463,7 +2469,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'May 23, 2024',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: swissArbitrationEuSafe,
     tags: ['Arbitration', 'Switzerland', 'EU Law', 'International Law', 'Legal Trends']
   }
 ]; 

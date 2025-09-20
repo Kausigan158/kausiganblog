@@ -4,6 +4,11 @@ import aiRevolutionHero from '../../../assets/ai-revolution-hero.jpg';
 import environmentalLaw from '../../../assets/environmental-law.jpg';
 import fintechRegulation from '../../../assets/fintech-regulation.jpg';
 import internationalLaw from '../../../assets/international-law.jpg';
+
+// Unique territorial disputes images
+import bordersBattlesPeaceful from '../../../assets/borders-battles-peaceful.jpg';
+import securityInvestmentLaw from '../../../assets/security-investment-law.jpg';
+import energyArbitrationPressure from '../../../assets/energy-arbitration-pressure.jpg';
 import { BlogPost } from '../../blogPosts';
 
 export const territorialDisputesPosts: BlogPost[] = [
@@ -90,7 +95,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'May 24, 2024',
     readTime: '6 min read',
     category: 'arbitration-insights',
-    imageUrl: remoteWorkLegal,
+    imageUrl: bordersBattlesPeaceful,
     tags: ['Arbitration', 'Territorial Disputes', 'Equity', 'Peace', 'International Law', 'Conflict Resolution']
   },
   {
@@ -158,7 +163,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 1, 2024',
     readTime: '7 min read',
     category: 'arbitration-insights',
-    imageUrl: environmentalLaw,
+    imageUrl: securityInvestmentLaw,
     tags: ['Arbitration', 'Investment Law', 'National Security', 'Sovereignty', 'International Law', 'Investment Protection']
   },
   {
@@ -241,7 +246,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 8, 2024',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: energyArbitrationPressure,
     tags: ['Arbitration', 'Energy Law', 'National Security', 'Investment Protection', 'International Law', 'Energy Arbitration']
   },
   {
