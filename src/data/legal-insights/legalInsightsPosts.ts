@@ -4,6 +4,33 @@ import environmentalLaw from '../../assets/environmental-law.jpg';
 import blockchainContracts from '../../assets/blockchain-contracts.jpg';
 import aiRevolutionHero from '../../assets/ai-revolution-hero.jpg';
 import remoteWorkLegal from '../../assets/remote-work-legal.jpg';
+
+// Unique legal insights images
+import koreaDigitalPower from '../../assets/korea-digital-power.jpg';
+import capitalismConstitutionalValues from '../../assets/capitalism-constitutional-values.jpg';
+import trademarkRightsFairPlay from '../../assets/trademark-rights-fair-play.jpg';
+import trademarksGlobalCommerce from '../../assets/trademarks-global-commerce.jpg';
+import trademarksUkEuBattles from '../../assets/trademarks-uk-eu-battles.jpg';
+import homeownersInsuranceClimate from '../../assets/homeowners-insurance-climate.jpg';
+import australiaAmlRegime from '../../assets/australia-aml-regime.jpg';
+import newEraCapitalism from '../../assets/new-era-capitalism.jpg';
+import globalProfitsTaxSystem from '../../assets/global-profits-tax-system.jpg';
+import britainCryptoInnovation from '../../assets/britain-crypto-innovation.jpg';
+import corporateTaxationMaze from '../../assets/corporate-taxation-maze.jpg';
+import capitalConfidenceSouthAsia from '../../assets/capital-confidence-south-asia.jpg';
+import redditWallStreetRegulation from '../../assets/reddit-wall-street-regulation.jpg';
+import europeCapitalClimate from '../../assets/europe-capital-climate.jpg';
+import euTighteningFinance from '../../assets/eu-tightening-finance.jpg';
+import openBankingEvolution from '../../assets/open-banking-evolution.jpg';
+import londonHongKongBlockchain from '../../assets/london-hong-kong-blockchain.jpg';
+import britainFraudStrategy from '../../assets/britain-fraud-strategy.jpg';
+import dataCurrencyUkEu from '../../assets/data-currency-uk-eu.jpg';
+import warEuropeGermanyEnergy from '../../assets/war-europe-germany-energy.jpg';
+import jurisdictionalJigsawInvestment from '../../assets/jurisdictional-jigsaw-investment.jpg';
+import cisgAustralianCourts from '../../assets/cisg-australian-courts.jpg';
+import powerSovereigntyWorld from '../../assets/power-sovereignty-world.jpg';
+import climateRulesEnergy from '../../assets/climate-rules-energy.jpg';
+import microsoftActivisionScrutiny from '../../assets/microsoft-activision-scrutiny.jpg';
 import { BlogPost } from '../blogPosts';
 
 export const legalInsightsPosts: BlogPost[] = [
@@ -119,7 +146,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'July 10, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: koreaDigitalPower,
     tags: ['South Korea', 'Digital Platforms', 'Competition Law', 'Artificial Intelligence', 'Platform Regulation', 'Judicial Resistance', 'Tech Giants', 'Market Power', 'Legal Innovation', 'Political Turmoil']
   },
   {
@@ -217,7 +244,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'July 5, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: capitalismConstitutionalValues,
     tags: ['Competition Law', 'Constitutional Values', 'Capitalism', 'Social Justice', 'Environmental Law', 'Market Regulation', 'Socio-Economic Rights', 'Carbon Neutral', 'Legal Framework', 'Sustainable Development']
   },
   {
@@ -346,7 +373,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 30, 2025',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: trademarkRightsFairPlay,
     tags: ['Trademark Law', 'First to Use', 'First to File', 'Intellectual Property', 'Fair Competition', 'Digital Marketing', 'Brand Protection', 'Legal Reform', 'Uzbekistan', 'Paris Convention']
   },
   {
@@ -454,7 +481,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 25, 2025',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: trademarksGlobalCommerce,
     tags: ['Trademark Law', 'Global Commerce', 'Brand Protection', 'Intellectual Property', 'Consumer Trust', 'Quality Guarantee', 'Advertising Function', 'Brand Recognition', 'Commercial Strategy', 'Market Differentiation']
   },
   {
@@ -573,7 +600,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 20, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: trademarksUkEuBattles,
     tags: ['Trademark Law', 'Intellectual Property', 'UK Law', 'EU Law', 'CJEU', 'Brand Protection', 'Legal Inconsistencies', 'Brexit', 'Competition Law', 'Empirical Analysis']
   },
   {
@@ -712,7 +739,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 15, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: homeownersInsuranceClimate,
     tags: ['Climate Change', 'Insurance Crisis', 'Homeowners Insurance', 'Climate Risk', 'Real Estate', 'Financial Stability', 'Risk Assessment', 'Public Policy', 'Disaster Recovery', 'Climate Adaptation']
   },
   {
@@ -830,7 +857,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 10, 2025',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: australiaAmlRegime,
     tags: ['AML', 'Anti-Money Laundering', 'Legal Gatekeepers', 'Financial Crime', 'Sanctions Enforcement', 'AUSTRAC', 'UK Regulations', 'Professional Responsibility', 'Compliance', 'Financial Intelligence']
   },
   {
@@ -941,7 +968,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'June 5, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: newEraCapitalism,
     tags: ['Corporate Purpose', 'Stakeholder Capitalism', 'Shareholder Primacy', 'Corporate Governance', 'Codetermination', 'ESG', 'Board Reform', 'Corporate Law', 'Sustainability', 'Business Ethics']
   },
   {
@@ -1084,7 +1111,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 30, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: globalProfitsTaxSystem,
     tags: ['Global Tax Reform', 'UN Framework Convention', 'Multinational Corporations', 'OECD', 'BEPS', 'Tax Treaties', 'Digital Taxation', 'International Cooperation', 'Developing Countries', 'Tax Sovereignty']
   },
   {
@@ -1211,7 +1238,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 25, 2025',
     readTime: '11 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: britainCryptoInnovation,
     tags: ['Cryptocurrency', 'UK Regulation', 'Blockchain', 'Digital Assets', 'Financial Services', 'Anti-Money Laundering', 'Tax Law', 'Consumer Protection', 'Central Bank Digital Currency', 'Regulatory Sandbox']
   },
   {
@@ -1315,7 +1342,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 20, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: corporateTaxationMaze,
     tags: ['Corporate Taxation', 'Governance', 'OECD', 'BEPS', 'Digital Tax', 'Pillar One', 'Pillar Two', 'Tax Compliance', 'Multinational Corporations', 'Tax Avoidance', 'Panama Papers']
   },
   {
@@ -1415,7 +1442,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 15, 2025',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: capitalConfidenceSouthAsia,
     tags: ['South Asia', 'Capital Markets', 'Financial Inclusion', 'Digital Banking', 'UPI', 'Investor Protection', 'Market Development', 'Financial Literacy', 'Trust', 'Economic Development']
   },
   {
@@ -1563,7 +1590,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 10, 2025',
     readTime: '11 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: redditWallStreetRegulation,
     tags: ['GameStop', 'Market Regulation', 'Social Media', 'EU Law', 'Market Abuse', 'Retail Investors', 'Digital Markets', 'MAR', 'Swarm Trading', 'Financial Regulation']
   },
   {
@@ -1679,7 +1706,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'May 5, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: europeCapitalClimate,
     tags: ['Capital Markets Union', 'EU Regulation', 'Sustainable Finance', 'Green Deal', 'Climate Finance', 'Financial Integration', 'European Commission', 'ECB', 'SIU']
   },
   {
@@ -1804,7 +1831,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 30, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: euTighteningFinance,
     tags: ['EMIR', 'EU Regulation', 'Financial Clearing', 'Derivatives', 'Brexit', 'Financial Stability', 'Global Markets', 'CCP', 'Financial Infrastructure']
   },
   {
@@ -1916,7 +1943,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 25, 2025',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: openBankingEvolution,
     tags: ['Open Banking', 'Financial Regulation', 'Data Rights', 'Consumer Protection', 'API Regulation', 'Fintech', 'Global Markets', 'Digital Finance', 'CFPB', 'PSD2']
   },
   {
@@ -2022,7 +2049,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 20, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: londonHongKongBlockchain,
     tags: ['Cryptocurrency', 'Regulation', 'Hong Kong', 'UK Law', 'Financial Services', 'Blockchain', 'Digital Assets', 'Crypto Regulation', 'FCA', 'SFC']
   },
   {
@@ -2128,7 +2155,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 15, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: britainFraudStrategy,
     tags: ['Fraud Strategy', 'UK Law', 'Criminal Law', 'Victim Support', 'Corporate Liability', 'Financial Crime', 'Law Enforcement', 'Economic Crime']
   },
   {
@@ -2300,7 +2327,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 10, 2025',
     readTime: '15 min read',
     category: 'legal-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: dataCurrencyUkEu,
     tags: ['Open Banking', 'Open Finance', 'Financial Regulation', 'Data Protection', 'UK Law', 'EU Law', 'Fintech', 'PSD2', 'FIDA']
   },
   {
@@ -2382,7 +2409,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'March 25, 2025',
     readTime: '11 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: warEuropeGermanyEnergy,
     tags: ['Investment Law', 'Energy Security', 'Germany', 'Russia', 'BITs', 'Expropriation', 'International Arbitration']
   },
   {
@@ -2478,7 +2505,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'March 20, 2025',
     readTime: '12 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: jurisdictionalJigsawInvestment,
     tags: ['Investment Law', 'MFN Clauses', 'BITs', 'International Arbitration', 'Jurisdiction', 'Treaty Interpretation']
   },
   {
@@ -2571,7 +2598,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'March 15, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: cisgAustralianCourts,
     tags: ['CISG', 'International Trade Law', 'Australian Courts', 'UNCITRAL', 'Commercial Law', 'Legal Interpretation']
   },
   {
@@ -2667,7 +2694,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'September 15, 2024',
     readTime: '8 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: powerSovereigntyWorld,
     tags: ['Global Governance', 'Sovereignty', 'International Law', 'Power Dynamics', 'Legal Reform']
   },
   {
@@ -2787,7 +2814,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'March 30, 2025',
     readTime: '9 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: climateRulesEnergy,
     tags: ['Climate Law', 'Energy Regulation', 'Compensation', 'Property Rights', 'Investment Law', 'Environmental Law']
   },
   {
@@ -2884,7 +2911,7 @@ export const legalInsightsPosts: BlogPost[] = [
     publishedDate: 'April 5, 2025',
     readTime: '10 min read',
     category: 'legal-insights',
-    imageUrl: internationalLaw,
+    imageUrl: microsoftActivisionScrutiny,
     tags: ['Competition Law', 'Antitrust', 'Video Games', 'Microsoft', 'Activision', 'Digital Markets', 'Merger Control']
   }
 ]; 
