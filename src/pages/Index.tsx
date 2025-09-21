@@ -196,8 +196,82 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-14 h-14 flex items-center justify-center bg-card rounded-full shadow-lg border-2 border-netflix-red">
-                  {/* Logo removed. Add your logo here if needed. */}
+                <div className="w-14 h-14 flex items-center justify-center bg-card rounded-full shadow-lg border-2 border-netflix-red overflow-hidden">
+                  {/* Divine Murugan Vel and Peacock Cinematic SVG Logo (fits circle, full edge visible) */}
+                  <svg width="100%" height="100%" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }}>
+                    <defs>
+                      <radialGradient id="vel-gem-footer" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stopColor="#ff3b3b"/>
+                        <stop offset="80%" stopColor="#b30000"/>
+                      </radialGradient>
+                      <linearGradient id="vel-gold-footer" x1="32" y1="8" x2="32" y2="64" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#fffbe6"/>
+                        <stop offset="0.4" stopColor="#FFD700"/>
+                        <stop offset="1" stopColor="#C08401"/>
+                      </linearGradient>
+                      <radialGradient id="peacock-blue-footer" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stopColor="#aee7ff"/>
+                        <stop offset="80%" stopColor="#1E90FF"/>
+                      </radialGradient>
+                      <radialGradient id="peacock-green-footer" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stopColor="#baffc9"/>
+                        <stop offset="80%" stopColor="#2ecc40"/>
+                      </radialGradient>
+                      <linearGradient id="sky-footer" x1="0" y1="0" x2="64" y2="72" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stopColor="#2d1a1a"/>
+                        <stop offset="0.3" stopColor="#ff3b3b"/>
+                        <stop offset="0.7" stopColor="#ff9900"/>
+                        <stop offset="1" stopColor="#111"/>
+                      </linearGradient>
+                    </defs>
+                    {/* Stormy sky background */}
+                    <rect x="0" y="0" width="64" height="72" fill="url(#sky-footer)"/>
+                    {/* Vel shaft */}
+                    <rect x="29" y="20" width="6" height="32" rx="3" fill="url(#vel-gold-footer)" stroke="#C08401" strokeWidth="1.2"/>
+                    {/* Vel spearhead */}
+                    <ellipse cx="32" cy="18" rx="12" ry="18" fill="url(#vel-gold-footer)" stroke="#C08401" strokeWidth="2"/>
+                    {/* Carvings */}
+                    <path d="M32 12 Q36 20 32 28 Q28 20 32 12" fill="none" stroke="#b8860b" strokeWidth="1.2"/>
+                    <path d="M32 16 Q34 20 32 24 Q30 20 32 16" fill="none" stroke="#b8860b" strokeWidth="0.8"/>
+                    {/* Glowing red gem */}
+                    <ellipse cx="32" cy="24" rx="3" ry="4" fill="url(#vel-gem-footer)" filter="url(#glow-footer)"/>
+                    <ellipse cx="32" cy="24" rx="1.2" ry="1.8" fill="#fff" opacity="0.5"/>
+                    {/* Red ribbon */}
+                    <path d="M32 52 Q38 62 28 70" stroke="#ff3b3b" strokeWidth="2.5" fill="none"/>
+                    <path d="M32 52 Q26 66 36 70" stroke="#ff3b3b" strokeWidth="2.5" fill="none"/>
+                    {/* Vel base */}
+                    <ellipse cx="32" cy="52" rx="6" ry="2.5" fill="#FFD700" stroke="#C08401" strokeWidth="1.2"/>
+                    {/* Peacock body */}
+                    <ellipse cx="48" cy="50" rx="7" ry="10" fill="url(#peacock-blue-footer)" stroke="#1E90FF" strokeWidth="1.2"/>
+                    {/* Peacock neck */}
+                    <rect x="46" y="40" width="3" height="10" rx="1.5" fill="url(#peacock-blue-footer)"/>
+                    {/* Peacock head */}
+                    <ellipse cx="47.5" cy="39" rx="2" ry="1.5" fill="#1E90FF"/>
+                    {/* Peacock eye */}
+                    <ellipse cx="48.2" cy="39.2" rx="0.4" ry="0.3" fill="#fff"/>
+                    {/* Peacock crown */}
+                    <path d="M47.5 37 Q47 35 46.5 36.5" stroke="#FFD700" strokeWidth="0.5"/>
+                    <path d="M48 37 Q48.5 35 49 36.5" stroke="#FFD700" strokeWidth="0.5"/>
+                    {/* Peacock feathers (simplified, radiating) */}
+                    <ellipse cx="54" cy="56" rx="2.5" ry="1.1" fill="url(#peacock-green-footer)"/>
+                    <ellipse cx="56" cy="52" rx="2.2" ry="1" fill="url(#peacock-green-footer)"/>
+                    <ellipse cx="52" cy="60" rx="2.2" ry="1" fill="url(#peacock-green-footer)"/>
+                    <ellipse cx="50" cy="54" rx="2.2" ry="1" fill="url(#peacock-green-footer)"/>
+                    {/* Feather eyes */}
+                    <ellipse cx="54" cy="56" rx="0.5" ry="0.3" fill="#FFD700"/>
+                    <ellipse cx="56" cy="52" rx="0.5" ry="0.3" fill="#FFD700"/>
+                    <ellipse cx="52" cy="60" rx="0.5" ry="0.3" fill="#FFD700"/>
+                    <ellipse cx="50" cy="54" rx="0.5" ry="0.3" fill="#FFD700"/>
+                    {/* Soft shadow under logo */}
+                    <ellipse cx="32" cy="68" rx="20" ry="3" fill="#000" opacity="0.18"/>
+                    <filter id="glow-footer" x="-10" y="-10" width="84" height="84">
+                      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                  </svg>
                 </div>
                 <span className="text-xl font-playfair font-bold text-yellow-100 drop-shadow">Kausigan Srinivasan's Blog</span>
               </div>
