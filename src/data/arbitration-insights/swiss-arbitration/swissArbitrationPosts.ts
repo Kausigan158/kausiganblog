@@ -1,15 +1,26 @@
-import environmentalLaw from '../../../assets/environmental-law.jpg';
-import blockchainContracts from '../../../assets/blockchain-contracts.jpg';
-import aiRevolutionHero from '../../../assets/ai-revolution-hero.jpg';
-import internationalLaw from '../../../assets/international-law.jpg';
-import fintechRegulation from '../../../assets/fintech-regulation.jpg';
-import remoteWorkLegal from '../../../assets/remote-work-legal.jpg';
-
 // Unique swiss arbitration images
-import techGiantsJusticeRules from '../../../assets/tech-giants-justice-rules.jpg';
-import indonesiaImmunityShield from '../../../assets/indonesia-immunity-shield.jpg';
-import swissArbitrationEuSafe from '../../../assets/swiss-arbitration-eu-safe.jpg';
-import malaysiaArbitrationGrowth from '../../../assets/malaysia-arbitration-growth.jpg';
+import techGiantsJusticeBehindDoors from '../../../assets/tech-giants-justice-behind-doors.jpg';
+import indonesiaInvestorsImmunityBeware from '../../../assets/indonesia-investors-immunity-beware.jpg';
+import japanArbitrationInterimMeasures from '../../../assets/japan-arbitration-interim-measures.jpg';
+import stockholmArbitrationCapital from '../../../assets/stockholm-arbitration-capital.jpg';
+import chinaBankruptcyArbitrationPuzzle from '../../../assets/china-bankruptcy-arbitration-puzzle.jpg';
+import europeInvestmentArbitrationTugWar from '../../../assets/europe-investment-arbitration-tug-war.jpg';
+import indonesiaPublicPolicyArbitration from '../../../assets/indonesia-public-policy-arbitration.jpg';
+import silentThreatGlobalArbitration from '../../../assets/silent-threat-global-arbitration.jpg';
+import beijingSovereignImmunityTightrope from '../../../assets/beijing-sovereign-immunity-tightrope.jpg';
+import treatiesBreakArbitrationSurvives from '../../../assets/treaties-break-arbitration-survives.jpg';
+import globalTaxDisputesTugWar from '../../../assets/global-tax-disputes-tug-war.jpg';
+import singaporeArbitrationPowerhouse from '../../../assets/singapore-arbitration-powerhouse.jpg';
+import singaporeSilentPartiesArbitration from '../../../assets/singapore-silent-parties-arbitration.jpg';
+import indonesianBusinessesSingaporeArbitration from '../../../assets/indonesian-businesses-singapore-arbitration.jpg';
+import aiMergersAcquisitionsMachines from '../../../assets/ai-mergers-acquisitions-machines.jpg';
+import supremeCourtAiPatents from '../../../assets/supreme-court-ai-patents.jpg';
+import competitionSustainabilityAi from '../../../assets/competition-sustainability-ai.jpg';
+import greenInvestmentArbitrationClimate from '../../../assets/green-investment-arbitration-climate.jpg';
+import aviationArbitrationGlobalFeuds from '../../../assets/aviation-arbitration-global-feuds.jpg';
+import silentForceBillionMergers from '../../../assets/silent-force-billion-mergers.jpg';
+import hiddenHandTaxmanInvestments from '../../../assets/hidden-hand-taxman-investments.jpg';
+import swissArbitrationEuLawChange from '../../../assets/swiss-arbitration-eu-law-change.jpg';
 import { BlogPost } from '../../blogPosts';
 
 export const swissArbitrationPosts: BlogPost[] = [
@@ -114,7 +125,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 2, 2025',
     readTime: '11 min read',
     category: 'arbitration-insights',
-    imageUrl: techGiantsJusticeRules,
+    imageUrl: techGiantsJusticeBehindDoors,
     tags: ['Technology', 'Arbitration', 'Privacy', 'Transparency', 'Digital Rights', 'Corporate Governance']
   },
   {
@@ -231,7 +242,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 5, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: indonesiaImmunityShield,
+    imageUrl: indonesiaInvestorsImmunityBeware,
     tags: ['Indonesia', 'State Immunity', 'Arbitration', 'Enforcement', 'Investment Law', 'State-Owned Enterprises']
   },
   {
@@ -347,7 +358,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 8, 2025',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: blockchainContracts,
+    imageUrl: japanArbitrationInterimMeasures,
     tags: ['Japan', 'Arbitration Reform', 'Interim Measures', 'UNCITRAL', 'Legal Modernization', 'Dispute Resolution']
   },
   {
@@ -458,7 +469,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 12, 2025',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: remoteWorkLegal,
+    imageUrl: stockholmArbitrationCapital,
     tags: ['Sweden', 'Stockholm', 'Arbitration', 'Evidence Law', 'Party Autonomy', 'International Dispute Resolution']
   },
   {
@@ -585,7 +596,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 15, 2025',
     readTime: '11 min read',
     category: 'arbitration-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: chinaBankruptcyArbitrationPuzzle,
     tags: ['China', 'Arbitration', 'Bankruptcy', 'Cross-Border Insolvency', 'International Law', 'Legal Reform']
   },
   {
@@ -688,7 +699,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 18, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: environmentalLaw,
+    imageUrl: europeInvestmentArbitrationTugWar,
     tags: ['Europe', 'EU Law', 'Investment Arbitration', 'Treaty Arbitration', 'Contract Arbitration', 'European Court of Justice']
   },
   {
@@ -791,7 +802,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 22, 2025',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: indonesiaPublicPolicyArbitration,
     tags: ['Indonesia', 'Public Policy', 'Arbitration Enforcement', 'New York Convention', 'Legal Reform', 'Investor Confidence']
   },
   {
@@ -880,7 +891,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 25, 2025',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: blockchainContracts,
+    imageUrl: silentThreatGlobalArbitration,
     tags: ['Insolvency', 'Arbitration', 'Cross-Border Disputes', 'Modified Universalism', 'Legal Cooperation', 'Global Legal Framework']
   },
   {
@@ -980,7 +991,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'January 28, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: internationalLaw,
+    imageUrl: beijingSovereignImmunityTightrope,
     tags: ['China', 'Sovereign Immunity', 'International Arbitration', 'State-Owned Enterprises', 'Belt and Road', 'Legal Reform']
   },
   {
@@ -1083,7 +1094,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 1, 2025',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: environmentalLaw,
+    imageUrl: treatiesBreakArbitrationSurvives,
     tags: ['Treaty Law', 'Separability Principle', 'Vienna Convention', 'International Arbitration', 'BITs', 'Legal Continuity']
   },
   {
@@ -1222,7 +1233,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 5, 2025',
     readTime: '12 min read',
     category: 'arbitration-insights',
-    imageUrl: remoteWorkLegal,
+    imageUrl: globalTaxDisputesTugWar,
     tags: ['Tax Disputes', 'MAP', 'Arbitration', 'Mediation', 'OECD', 'BEPS', 'International Tax Law']
   },
   {
@@ -1315,7 +1326,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 8, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: blockchainContracts,
+    imageUrl: singaporeArbitrationPowerhouse,
     tags: ['Singapore', 'Arbitration Appeals', 'Finality', 'Party Autonomy', 'Court Intervention', 'Arbitration Reform']
   },
   {
@@ -1398,7 +1409,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 12, 2025',
     readTime: '7 min read',
     category: 'arbitration-insights',
-    imageUrl: fintechRegulation,
+    imageUrl: singaporeSilentPartiesArbitration,
     tags: ['Singapore', 'Court Decision', 'Silent Parties', 'Arbitration Participation', 'Notice Requirements', 'Infra Petita Challenge']
   },
   {
@@ -1494,7 +1505,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 15, 2025',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: internationalLaw,
+    imageUrl: indonesianBusinessesSingaporeArbitration,
     tags: ['Indonesia', 'Singapore', 'Arbitration Tourism', 'Enforcement', 'BANI', 'SIAC', 'Legal Reform']
   },
   {
@@ -1607,7 +1618,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 18, 2025',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: aiMergersAcquisitionsMachines,
     tags: ['Artificial Intelligence', 'Mergers and Acquisitions', 'Financial Technology', 'Due Diligence', 'Legal Technology', 'Capital Markets']
   },
   {
@@ -1732,7 +1743,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 22, 2025',
     readTime: '11 min read',
     category: 'arbitration-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: supremeCourtAiPatents,
     tags: ['UK Supreme Court', 'AI Inventorship', 'Patent Law', 'DABUS Case', 'Intellectual Property', 'Legal Innovation']
   },
   {
@@ -1847,7 +1858,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'February 25, 2025',
     readTime: '12 min read',
     category: 'arbitration-insights',
-    imageUrl: environmentalLaw,
+    imageUrl: competitionSustainabilityAi,
     tags: ['Competition Policy', 'Sustainability', 'Artificial Intelligence', 'Digital Markets Act', 'Green Innovation', 'Killer Acquisitions']
   },
   {
@@ -1953,7 +1964,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'December 30, 2024',
     readTime: '12 min read',
     category: 'arbitration-insights',
-    imageUrl: environmentalLaw,
+    imageUrl: greenInvestmentArbitrationClimate,
     tags: ['Environmental Law', 'Investment Arbitration', 'Climate Change', 'International Law', 'Sustainable Development']
   },
   {
@@ -2073,7 +2084,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'December 25, 2024',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: blockchainContracts,
+    imageUrl: aviationArbitrationGlobalFeuds,
     tags: ['Aviation', 'Arbitration', 'International Law', 'Dispute Resolution', 'Commercial Law']
   },
   {
@@ -2192,7 +2203,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'December 20, 2024',
     readTime: '15 min read',
     category: 'arbitration-insights',
-    imageUrl: internationalLaw,
+    imageUrl: silentForceBillionMergers,
     tags: ['Mergers & Acquisitions', 'Cross-Border Deals', 'Investment Law', 'Arbitration', 'Risk Management']
   },
   {
@@ -2300,7 +2311,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'December 15, 2024',
     readTime: '12 min read',
     category: 'arbitration-insights',
-    imageUrl: remoteWorkLegal,
+    imageUrl: hiddenHandTaxmanInvestments,
     tags: ['Taxation', 'Expropriation', 'Investment Treaties', 'Arbitration', 'International Law']
   },
   {
@@ -2469,7 +2480,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     publishedDate: 'May 23, 2024',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: swissArbitrationEuSafe,
+    imageUrl: swissArbitrationEuLawChange,
     tags: ['Arbitration', 'Switzerland', 'EU Law', 'International Law', 'Legal Trends']
   }
 ]; 

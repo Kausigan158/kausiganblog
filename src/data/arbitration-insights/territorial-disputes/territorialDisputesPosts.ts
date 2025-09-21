@@ -1,14 +1,10 @@
-import remoteWorkLegal from '../../../assets/remote-work-legal.jpg';
-import blockchainContracts from '../../../assets/blockchain-contracts.jpg';
-import aiRevolutionHero from '../../../assets/ai-revolution-hero.jpg';
-import environmentalLaw from '../../../assets/environmental-law.jpg';
-import fintechRegulation from '../../../assets/fintech-regulation.jpg';
-import internationalLaw from '../../../assets/international-law.jpg';
-
 // Unique territorial disputes images
-import bordersBattlesPeaceful from '../../../assets/borders-battles-peaceful.jpg';
-import securityInvestmentLaw from '../../../assets/security-investment-law.jpg';
-import energyArbitrationPressure from '../../../assets/energy-arbitration-pressure.jpg';
+import bordersBattlesArbitrationPeaceful from '../../../assets/borders-battles-arbitration-peaceful.jpg';
+import nationalSecurityInvestmentArbitration from '../../../assets/national-security-investment-arbitration.jpg';
+import energyArbitrationSecurityPressure from '../../../assets/energy-arbitration-security-pressure.jpg';
+import ipArbitrationCriminalConduct from '../../../assets/ip-arbitration-criminal-conduct.jpg';
+import indiaEmergencyArbitrationGaps from '../../../assets/india-emergency-arbitration-gaps.jpg';
+import publicProjectsFuelArbitration from '../../../assets/public-projects-fuel-arbitration.jpg';
 import { BlogPost } from '../../blogPosts';
 
 export const territorialDisputesPosts: BlogPost[] = [
@@ -95,7 +91,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'May 24, 2024',
     readTime: '6 min read',
     category: 'arbitration-insights',
-    imageUrl: bordersBattlesPeaceful,
+    imageUrl: bordersBattlesArbitrationPeaceful,
     tags: ['Arbitration', 'Territorial Disputes', 'Equity', 'Peace', 'International Law', 'Conflict Resolution']
   },
   {
@@ -163,7 +159,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 1, 2024',
     readTime: '7 min read',
     category: 'arbitration-insights',
-    imageUrl: securityInvestmentLaw,
+    imageUrl: nationalSecurityInvestmentArbitration,
     tags: ['Arbitration', 'Investment Law', 'National Security', 'Sovereignty', 'International Law', 'Investment Protection']
   },
   {
@@ -246,7 +242,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 8, 2024',
     readTime: '8 min read',
     category: 'arbitration-insights',
-    imageUrl: energyArbitrationPressure,
+    imageUrl: energyArbitrationSecurityPressure,
     tags: ['Arbitration', 'Energy Law', 'National Security', 'Investment Protection', 'International Law', 'Energy Arbitration']
   },
   {
@@ -362,7 +358,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 18, 2024',
     readTime: '9 min read',
     category: 'arbitration-insights',
-    imageUrl: aiRevolutionHero,
+    imageUrl: ipArbitrationCriminalConduct,
     tags: ['Arbitration', 'Intellectual Property', 'Criminal Law', 'International Law', 'IP Disputes', 'Enforcement']
   },
   {
@@ -444,7 +440,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 21, 2024',
     readTime: '7 min read',
     category: 'arbitration-insights',
-    imageUrl: blockchainContracts,
+    imageUrl: indiaEmergencyArbitrationGaps,
     tags: ['Arbitration', 'Emergency Arbitration', 'India', 'International Law', 'Judicial Framework', 'Institutional Rules']
   },
   {
@@ -530,7 +526,7 @@ export const territorialDisputesPosts: BlogPost[] = [
     publishedDate: 'June 28, 2024',
     readTime: '10 min read',
     category: 'arbitration-insights',
-    imageUrl: internationalLaw,
+    imageUrl: publicProjectsFuelArbitration,
     tags: ['Arbitration', 'Energy Law', 'Public Sector', 'India', 'Infrastructure', 'Regulatory Compliance']
   }
 ]; 
