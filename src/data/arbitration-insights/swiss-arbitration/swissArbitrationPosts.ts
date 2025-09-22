@@ -33,7 +33,7 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## When Privacy Becomes Power
 <div class="content-section mb-6">
   <p class="text-lg text-foreground leading-relaxed mb-3">
-    For decades, international commercial arbitration has served as a private, fast, and effective system for resolving cross-border business disputes. It has especially appealed to technology companies that rely on confidentiality to safeguard trade secrets and proprietary information. But the landscape has changed. These firms are no longer just commercial players. They now shape public life in fundamental ways managing data, enabling digital labor, influencing markets, and even regulating speech.
+    For decades, international commercial arbitration has served as a private, fast, and effective system for resolving cross border business disputes. It has especially appealed to technology companies that rely on confidentiality to safeguard trade secrets and proprietary information. But the landscape has changed. These firms are no longer just commercial players. They now shape public life in fundamental ways managing data, enabling digital labor, influencing markets, and even regulating speech.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     This dual identity, as both business and public infrastructure, raises a tough question. Should their disputes remain shielded behind closed arbitration doors, or is there a growing need for public scrutiny? In a world where the same platforms that drive profits also shape social norms, the balance between confidentiality and transparency has become a defining challenge in tech arbitration.
@@ -59,7 +59,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     As tech companies grow in influence, their disputes increasingly impact not just shareholders but consumers, workers, regulators, and society. Cases like Apple v. Qualcomm and Uber v. Indian Regulatory Authorities demonstrate how arbitration can obscure vital legal questions from public view questions about labor classification, data protection, antitrust practices, and digital rights.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Apple v. Qualcomm, for example, revolved around royalties on standard-essential patents, which are critical to global telecom infrastructure. Though the case attracted international attention and regulatory scrutiny, the eventual resolution came through private arbitration. A secret settlement erased the opportunity for courts and regulators to establish precedents on FRAND licensing or antitrust law. The public learned little beyond vague announcements, and the legal void was filled with strategic spin rather than accountability.
+    Apple v. Qualcomm, for example, revolved around royalties on standard essential patents, which are critical to global telecom infrastructure. Though the case attracted international attention and regulatory scrutiny, the eventual resolution came through private arbitration. A secret settlement erased the opportunity for courts and regulators to establish precedents on FRAND licensing or antitrust law. The public learned little beyond vague announcements, and the legal void was filled with strategic spin rather than accountability.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     Similarly, in India, Uber used arbitration to sidestep public scrutiny in disputes over whether its drivers are employees, how it ensures passenger safety, and how it handles user data. These were not ordinary contract claims. They touched the very fabric of labor rights, platform responsibility, and digital privacy. Arbitration, instead of producing clarity, suppressed legal debate and shut out affected communities from participating in decisions that affect their lives.
@@ -370,7 +370,7 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## The Power of Proof
 <div class="content-section mb-6">
   <p class="text-lg text-foreground leading-relaxed mb-3">
-    In the high stakes world of international arbitration, evidence is not just a tool—it is the battlefield. Parties locked in disputes across borders rely on their ability to present convincing, well structured proof. In this arena, what you can show often outweighs what you can argue. Nowhere is this dynamic more evident than in the discreet but influential corridors of Sweden's arbitration system and the Stockholm Chamber of Commerce, which has quietly emerged as one of the world's most respected arbitral hubs.
+    In the high stakes world of international arbitration, evidence is not just a tool it is the battlefield. Parties locked in disputes across borders rely on their ability to present convincing, well structured proof. In this arena, what you can show often outweighs what you can argue. Nowhere is this dynamic more evident than in the discreet but influential corridors of Sweden's arbitration system and the Stockholm Chamber of Commerce, which has quietly emerged as one of the world's most respected arbitral hubs.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     At the heart of the process is a principle that places full responsibility on the parties. The arbitrators, often seen as referees rather than investigators, remain on the sidelines, granting disputing parties nearly complete autonomy over how they collect, present, and defend their evidence.
@@ -380,7 +380,7 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## Written Versus Spoken: Two Sides of the Evidentiary Coin
 <div class="content-section mb-6">
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Evidence in Sweden's arbitration process divides neatly into two categories: written and oral. Written materials dominate the stage. Contracts, business correspondence, diagrams, plans, certificates, rulings from courts or tribunals—all these documents form the bedrock of many cases. Because of their clarity and permanence, written records tend to carry the most weight.
+    Evidence in Sweden's arbitration process divides neatly into two categories: written and oral. Written materials dominate the stage. Contracts, business correspondence, diagrams, plans, certificates, rulings from courts or tribunals all these documents form the bedrock of many cases. Because of their clarity and permanence, written records tend to carry the most weight.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     Oral evidence, on the other hand, brings in the human element. Witnesses, party representatives, and third parties can all offer live or recorded testimony. Their statements might add color and context to dry documents, but without legal tools like swearing in or cross examination under oath, Swedish law relies on the goodwill and honesty of those who speak. Arbitrators cannot compel honesty or penalize falsehoods. Instead, they listen and evaluate.
@@ -390,10 +390,10 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## The Shades of Legality in Obtained Evidence
 <div class="content-section mb-6">
   <p class="text-base text-foreground leading-relaxed mb-3">
-    One striking feature of Swedish arbitration is its tolerance for evidence acquired through murky channels. Unlike some jurisdictions, Swedish law does not strictly ban the use of documents obtained illegally—such as through hacking or unauthorized access—unless parties or arbitrators explicitly object. This permissiveness sets Sweden apart from countries like Russia, where unlawfully obtained evidence is automatically disqualified.
+    One striking feature of Swedish arbitration is its tolerance for evidence acquired through murky channels. Unlike some jurisdictions, Swedish law does not strictly ban the use of documents obtained illegally such as through hacking or unauthorized access unless parties or arbitrators explicitly object. This permissiveness sets Sweden apart from countries like Russia, where unlawfully obtained evidence is automatically disqualified.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Still, there's a backstop. Arbitrators working under international standards, particularly the widely accepted IBA Rules, may choose to reject evidence obtained through illegitimate means. It is a balancing act—one that weighs fairness and legality against the sheer pursuit of truth.
+    Still, there's a backstop. Arbitrators working under international standards, particularly the widely accepted IBA Rules, may choose to reject evidence obtained through illegitimate means. It is a balancing act one that weighs fairness and legality against the sheer pursuit of truth.
   </p>
 </div>
 
@@ -413,10 +413,10 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## Arbitrators as Observers, Not Investigators
 <div class="content-section mb-6">
   <p class="text-base text-foreground leading-relaxed mb-3">
-    One of the most distinctive features of Swedish arbitration is the restrained role of the arbitrators. Unlike judges in some systems who actively probe, question, and investigate, Swedish arbitrators stay quiet. Their questions are rare and limited—mostly for clarification.
+    One of the most distinctive features of Swedish arbitration is the restrained role of the arbitrators. Unlike judges in some systems who actively probe, question, and investigate, Swedish arbitrators stay quiet. Their questions are rare and limited mostly for clarification.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    This hands-off approach is rooted in tradition. After Sweden's Judicial Code was modernized in the mid-20th century, the country embraced elements from both civil and common law systems. Over time, a uniquely Swedish legal culture developed—one where neutrality and noninterference became cornerstones of arbitration.
+    This hands off approach is rooted in tradition. After Sweden's Judicial Code was modernized in the mid 20th century, the country embraced elements from both civil and common law systems. Over time, a uniquely Swedish legal culture developed one where neutrality and noninterference became cornerstones of arbitration.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     Retired Swedish judges, often appointed to arbitral tribunals, bring this philosophy with them. They focus on maintaining balance rather than uncovering truths. Their job is to guide the process, not shape its outcome.
@@ -455,7 +455,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     Sweden's arbitration process is both traditional and quietly radical. Its minimalism may seem passive, but beneath the surface lies a system that fiercely defends fairness, autonomy, and international compatibility. It avoids showy interventions and relies on trust, precision, and selfregulation.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    In a world where legal disputes can stretch across continents, cultures, and legal systems, Stockholm has become a calm, respected center for resolving some of the most complex global disagreements. And in its chambers, the unspoken understanding is clear: justice is not imposed—it is shaped by the strength of what you bring to the table.
+    In a world where legal disputes can stretch across continents, cultures, and legal systems, Stockholm has become a calm, respected center for resolving some of the most complex global disagreements. And in its chambers, the unspoken understanding is clear: justice is not imposed it is shaped by the strength of what you bring to the table.
   </p>
 </div>
 
@@ -487,7 +487,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     By the 1980s and 1990s, arbitration was no longer a fringe concept but a cornerstone of China's foreign trade machinery. Institutions like CIETAC, established decades earlier, began booming. China adopted global frameworks like the New York Convention and modeled much of its Arbitration Law after international practices, even as it kept its own unique legal identity.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    This embrace of arbitration stood in stark contrast to the country's more reserved handling of insolvency laws. While arbitration offered international comfort and predictability, insolvency—especially cross-border insolvency—touched a nerve that revealed deeper national concerns about control, fairness, and economic stability.
+    This embrace of arbitration stood in stark contrast to the country's more reserved handling of insolvency laws. While arbitration offered international comfort and predictability, insolvency especially cross border insolvency touched a nerve that revealed deeper national concerns about control, fairness, and economic stability.
   </p>
 </div>
 
@@ -523,7 +523,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     After bankruptcy proceedings are accepted by a court, all ongoing arbitrations are technically paused. An appointed administrator gains control of the debtor's estate and has the right to continue, suspend, or settle any arbitration.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Preservation measures taken before the bankruptcy—like freezing assets—can be released by the administrator if they interfere with asset distribution. Arbitral awards, too, must be reviewed. If the administrator suspects collusion or fraud, they can challenge enforcement, but the burden of proof is high. Courts demand proof beyond reasonable doubt for claims of malicious collusion, which administrators often struggle to provide.
+    Preservation measures taken before the bankruptcy like freezing assets can be released by the administrator if they interfere with asset distribution. Arbitral awards, too, must be reviewed. If the administrator suspects collusion or fraud, they can challenge enforcement, but the burden of proof is high. Courts demand proof beyond reasonable doubt for claims of malicious collusion, which administrators often struggle to provide.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     The question of which court has jurisdiction to hear challenges to arbitration adds further complexity. Several courts might be involved: the one handling the bankruptcy, the one overseeing the arbitration institution, or the one where the debtor's assets are located. In practice, courts usually defer to the bankruptcy court, seeing insolvency as a special matter.
@@ -536,7 +536,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     When conflicts arise between arbitration and insolvency, Chinese law typically favors the collective principles of bankruptcy. Arbitration awards may still be valid, but their enforcement must go through the insolvency process. Creditors cannot bypass other claimants or get special treatment simply because they won a previous arbitration.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    This hierarchy reflects a broader philosophy. Bankruptcy isn't just a matter of private law—it involves public interest, employment protections, and economic policy. It is treated as a legal process in service of society, not just individuals or corporations.
+    This hierarchy reflects a broader philosophy. Bankruptcy isn't just a matter of private law it involves public interest, employment protections, and economic policy. It is treated as a legal process in service of society, not just individuals or corporations.
   </p>
 </div>
 
@@ -559,7 +559,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     Looking ahead, arbitration could be more than a workaround. It could offer practical tools for cross-border insolvency coordination. Arbitrators already bring neutral, international expertise, and many arbitration institutions allow foreign experts to serve in cases. China could expand this to include insolvency specialists and allow arbitration of broader insolvency-related disputes.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    There are also intriguing future possibilities. Arbitration could help manage complex pre-reorganization agreements, resolve holdouts in debt restructuring, and even address jurisdictional battles when companies operate across multiple countries. With specialized rules and institutions, insolvency arbitration could one day resemble investment arbitration or sports arbitration—niche but powerful.
+    There are also intriguing future possibilities. Arbitration could help manage complex pre reorganization agreements, resolve holdouts in debt restructuring, and even address jurisdictional battles when companies operate across multiple countries. With specialized rules and institutions, insolvency arbitration could one day resemble investment arbitration or sports arbitration niche but powerful.
   </p>
 </div>
 
@@ -582,7 +582,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     Using arbitration to help manage cross-border insolvency disputes makes sense, particularly where courts may hesitate. It offers predictability, neutrality, and access to enforcement under widely adopted international rules. But it will never replace the collective justice of a robust insolvency system.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    If anything, arbitration is a bridge—a way to bring foreign confidence into a system still finding its footing. With the right reforms, China could lead not just in trade, but in global legal integration, too. Arbitration may be the hand that holds the door open. But only a stronger, more confident insolvency regime can walk through it.
+    If anything, arbitration is a bridge a way to bring foreign confidence into a system still finding its footing. With the right reforms, China could lead not just in trade, but in global legal integration, too. Arbitration may be the hand that holds the door open. But only a stronger, more confident insolvency regime can walk through it.
   </p>
 </div>
 
@@ -621,7 +621,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     The EU's high court began closing the door on investor-state arbitration in a series of controversial rulings. These decisions found that allowing such disputes to bypass national courts violated fundamental principles of EU law, such as judicial autonomy and mutual trust among member states.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    The practical fallout was swift. Member states rushed to terminate bilateral investment treaties within the bloc. Arbitration clauses in the Energy Charter Treaty, a multilateral agreement, were similarly disowned for intra-EU disputes. Yet in building this legal wall, the Court made one notable exception: commercial arbitration—the kind typically rooted in private contracts rather than public treaties.
+    The practical fallout was swift. Member states rushed to terminate bilateral investment treaties within the bloc. Arbitration clauses in the Energy Charter Treaty, a multilateral agreement, were similarly disowned for intra EU disputes. Yet in building this legal wall, the Court made one notable exception: commercial arbitration the kind typically rooted in private contracts rather than public treaties.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     This exception opened a window. While the system of investor-state arbitration under treaties is effectively outlawed, the Court has not condemned contract-based arbitration, leaving space for a different kind of legal forum between states and investors.
@@ -631,7 +631,7 @@ export const swissArbitrationPosts: BlogPost[] = [
 ## The Roots and Limits of Contract Arbitration
 <div class="content-section mb-6">
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Contract-based arbitration is nothing new. When a state and a foreign investor enter into a commercial agreement—say, to build an airport or operate a utility—these contracts often contain an arbitration clause. This clause allows disputes to be settled outside the local courts, usually through international arbitral institutions.
+    Contract based arbitration is nothing new. When a state and a foreign investor enter into a commercial agreement say, to build an airport or operate a utility these contracts often contain an arbitration clause. This clause allows disputes to be settled outside the local courts, usually through international arbitral institutions.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     European courts have long accepted such arrangements, provided national courts can ultimately review arbitral awards. That review is critical. The European Court of Justice has emphasized that no arbitration can be so insulated as to undermine the legal framework of the EU itself.
@@ -650,7 +650,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     First, treaty-based arbitration stems from intergovernmental agreements that bind states across the board. The Court argues this removes disputes from national courts and risks inconsistency with EU law. By contrast, contract arbitration is seen as a private agreement that does not carry the same systemic risks.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Second, the Court is concerned with how much control EU courts retain over arbitral decisions. If an arbitral award cannot be reviewed under EU law—especially by the European Court itself—it may undermine the entire legal order. Here, the distinction becomes murkier.
+    Second, the Court is concerned with how much control EU courts retain over arbitral decisions. If an arbitral award cannot be reviewed under EU law especially by the European Court itself it may undermine the entire legal order. Here, the distinction becomes murkier.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     Both treaty and contract arbitration often fall under the same procedural rules. In either case, the arbitration is governed by the law of the country where it is seated. National courts can annul or refuse to enforce awards that violate EU law. But not always.
@@ -669,7 +669,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     Still, this path is not without risk. A recent ruling from Greece's highest administrative court cast doubt on whether a contractual arbitration clause could be enforced if the dispute touched on EU tax law. The Greek court invoked the EU's Achmea and PL Holdings decisions to argue that even a contract might not shield a dispute from national court jurisdiction.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    That interpretation is far from settled. The European Court has so far resisted making sweeping claims about contract arbitration. Its rulings have focused narrowly on cases where a contract was used to circumvent a now-invalid treaty clause. Where arbitration agreements are freely entered into and allow for national court oversight, the legal path appears clear—for now.
+    That interpretation is far from settled. The European Court has so far resisted making sweeping claims about contract arbitration. Its rulings have focused narrowly on cases where a contract was used to circumvent a now invalid treaty clause. Where arbitration agreements are freely entered into and allow for national court oversight, the legal path appears clear for now.
   </p>
 </div>
 
@@ -1036,7 +1036,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     The doctrine of separability isn't a fringe legal theory. It's a globally accepted principle in contract law and arbitration statutes. Courts from the United States to France to China recognize that arbitration clauses can survive contract invalidity. The United Nations Commission on International Trade Law (UNCITRAL) embraces it. It's enshrined in model laws, court rulings, and academic consensus across continents.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    What makes this truly remarkable is that this principle might now be migrating from private contracts into the public domain of treaties. That leap is supported by systemic interpretation under Article 31 of the VCLT, which allows general legal principles—like separability—to influence treaty interpretation.
+    What makes this truly remarkable is that this principle might now be migrating from private contracts into the public domain of treaties. That leap is supported by systemic interpretation under Article 31 of the VCLT, which allows general legal principles like separability to influence treaty interpretation.
   </p>
 </div>
 
@@ -1132,7 +1132,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     While MAP is voluntary and often murky, arbitration aims to provide a definitive and enforceable outcome. Yet its rise has not been smooth.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Developing nations have long viewed arbitration with suspicion. There is concern about ceding too much power to third parties, especially when arbitrators may not fully understand local tax systems or economic contexts. The core issue is sovereignty—the fear of allowing outsiders to interfere in domestic financial decisions.
+    Developing nations have long viewed arbitration with suspicion. There is concern about ceding too much power to third parties, especially when arbitrators may not fully understand local tax systems or economic contexts. The core issue is sovereignty the fear of allowing outsiders to interfere in domestic financial decisions.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     For decades, civil law countries enshrined the idea that public tax rights cannot be negotiated or settled outside the courts. But pressure from international bodies and trade partners has forced a slow reevaluation.
@@ -2041,7 +2041,7 @@ export const swissArbitrationPosts: BlogPost[] = [
     <strong>The Hague Court of Arbitration for Aviation (HCAA):</strong> Founded in 2022, it allows the appointment of arbitrators with specific aerospace qualifications. It also uses expedited procedures and remote hearings, making it suitable for global aviation players.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
-    <strong>The AAA–ICDR's aerospace panel:</strong> Ensures technical precision in arbitrator appointments, particularly useful for US-based stakeholders.
+    <strong>The AAA ICDR's aerospace panel:</strong> Ensures technical precision in arbitrator appointments, particularly useful for US based stakeholders.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     <strong>The International Aviation Court of Arbitration in Shanghai:</strong> Aims to serve Asian aviation disputes, bolstered by the support of the Civil Aviation Administration of China and IATA.
@@ -2473,7 +2473,7 @@ export const swissArbitrationPosts: BlogPost[] = [
   <div class="bg-gradient-to-r from-netflix-red/10 to-transparent p-6 rounded-xl border border-netflix-red/20 my-4">
     <h3 class="text-xl font-semibold text-foreground mb-3">Key Takeaway</h3>
     <p class="text-base text-foreground leading-relaxed">
-      While Switzerland has long championed a neutral and arbitration-friendly legal framework, the increasing judicial assertiveness of the European Union—particularly after Achmea and Komstroy—has begun to cast legal shadows over Swiss-seated arbitrations, especially when enforcement or public policy intersects with EU jurisdiction. This evolving tension calls for greater strategic foresight by parties drafting arbitration clauses, choosing seats, and enforcing awards. Navigating this legal divide requires not only understanding the black letter law but also the political undercurrents shaping transnational dispute resolution in Europe.
+      While Switzerland has long championed a neutral and arbitration friendly legal framework, the increasing judicial assertiveness of the European Union particularly after Achmea and Komstroy has begun to cast legal shadows over Swiss seated arbitrations, especially when enforcement or public policy intersects with EU jurisdiction. This evolving tension calls for greater strategic foresight by parties drafting arbitration clauses, choosing seats, and enforcing awards. Navigating this legal divide requires not only understanding the black letter law but also the political undercurrents shaping transnational dispute resolution in Europe.
     </p>
   </div>`,
     author: 'Kausigan Srinivasan',

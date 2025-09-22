@@ -168,7 +168,7 @@ export const legalInsightsPosts: BlogPost[] = [
 ## Defining Socio-Economic and Environmental Priorities
 <div class="content-section mb-6">
   <p class="text-base text-foreground leading-relaxed mb-3">
-    Many voices now call for a future in which socio-economic rights—such as work, the availability of healthcare and nourishment—and environmental values—such as a clean environment, biodiversity, and the lowering of harmful emissions—are seamlessly integrated into the architecture of competitive markets. Instead of seeing these social mandates and green ambitions as conflicting with economic progress, they are coming to be regarded as complementary aspects that need to inform every market regulation decision.
+    Many voices now call for a future in which socio economic rights such as work, the availability of healthcare and nourishment and environmental values such as a clean environment, biodiversity, and the lowering of harmful emissions are seamlessly integrated into the architecture of competitive markets. Instead of seeing these social mandates and green ambitions as conflicting with economic progress, they are coming to be regarded as complementary aspects that need to inform every market regulation decision.
   </p>
   <p class="text-base text-foreground leading-relaxed mb-3">
     The landscape of competition law is thus being reimagined to go hand in hand with a new discourse that affirms human dignity and ecological responsibility. The narrative explores the ideas that a better understanding of a nation's constitution reveals new directions for policies. Such integration will allow policymakers and enforcers to consider broader societal impacts of competition law.
@@ -237,7 +237,7 @@ export const legalInsightsPosts: BlogPost[] = [
   <div class="bg-gradient-to-r from-netflix-red/10 to-transparent p-6 rounded-xl border border-netflix-red/20 my-4">
     <h3 class="text-xl font-semibold text-foreground mb-3">Key Takeaway</h3>
     <p class="text-base text-foreground leading-relaxed">
-      Competition law should not be treated as a standalone tool for market regulation but should be understood and applied through the lens of national constitutions, which often enshrine fundamental socio-economic and environmental values. In an era of global transformation toward a carbon-neutral and socially inclusive economy, these constitutional values—such as the right to work, access to healthcare, environmental protection, and social justice—should shape how competition law is designed and interpreted. By aligning market rules with constitutional commitments, especially in countries undergoing economic transition, legal systems can better support fair, inclusive, and sustainable economic development.
+      Competition law should not be treated as a standalone tool for market regulation but should be understood and applied through the lens of national constitutions, which often enshrine fundamental socio economic and environmental values. In an era of global transformation toward a carbon neutral and socially inclusive economy, these constitutional values such as the right to work, access to healthcare, environmental protection, and social justice should shape how competition law is designed and interpreted. By aligning market rules with constitutional commitments, especially in countries undergoing economic transition, legal systems can better support fair, inclusive, and sustainable economic development.
     </p>
   </div>`,
     author: 'Kausigan Srinivasan',
